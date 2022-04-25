@@ -61,25 +61,82 @@
 
     </section>
     <hr>
-<!--Here I created -->
+<!--Here I created radio buttons and checkboxes header-->
     <section>
         <h1>Radio Buttons and Checkboxes</h1>
             <form action="birds>
                 <label for="agree">I agree to everything</label>
                 <input type="checkbox" name="agree_tos" id="agree">
-                <!-- -->
+                <!--Here I created 3 checkboxes for 3 different sizes =, small, medium and large-->
                 <p>
-                    <!-- -->
+                    <!--Here I created a small label and input type-->
                     <label for="s">Small</label>
                     <input type="radio" name="size" id="s" value="small">
-                    <!-- -->
+                    <!--Here I created a medium label and input type -->
                     <label for="s">Medium</label>
                     <input type="radio" name="size" id="m" value="medium">
-                    <!-- -->
+                    <!--Here I created a large label and input type-->
                     <label for="s">Large</label>
                     <input type="radio" name="size" id="l" value="large">
                 </p>
+               
+                 <!--Here I created a combo box for 3 different favorite colors, red, green and blue-->
+                 <p>
+                    <label for="favcolor">What is your favorite color?</label>
+
+                    <select name="favorite" id="favcolor">
+
+                        <option value="red">Red</option>
+
+                        <option value="green">Green</option>
+
+                        <option value="blue">Blue</option>
+
+                    </select>
+
+                </p>
+
+                <!--Here I created a scrollbar label with min and max attributes-->
+                <p>
+
+                    <label for="scroll">Mylinh's Scrollbar</label>
+                    <input type="range" id="scroll" min="5" max="10" name="scrollbar">
+
+                </p>
+                <!--Here I created a textbox to add text in-->
+                <p>
+                    <label for="requests">Type into this box</label>
+                    <textarea id="requests" name="reqs" rows="15" cols="15" placeholder="Type something here!"></textarea>
+
+                </p>
+
+                  <!--Here I created a Submit button-->
+                  <button>Submit</button>
             </form>
+    </section>
+    <hr>
+    <!--Here I created a Form Validation heading: the forward slash before "banana" means it's a url-->
+    <section>
+        <h2>Form Validation</h2>
+        <form action="/bananas">
+            <!--Here I created a label element-->
+            <label for="required1"></label>
+
+            <input type="text" name="funny" id="required1" required>
+
+            <!--Here I created a label element with a min of 5 characters and max of 10-->
+            <label for="length"></label>
+            <input type="text" name="lengthy" id="length" minlength="5" maxlength="10">
+
+            <!--Here I created an email box with an email attribute-->
+            <p>
+                <input type="email" required>
+
+            </p>
+
+            <!--Here I created a submit button-->
+            <button>Submit</button>
+        </form>
     </section>
 
 </body>
