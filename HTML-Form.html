@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--Here I created a "PLease fill out the form below" header-->
+
+<body>
+    <section>
+        <h1>Please fill out the form below</h1>
+        <form action="food"></form>
+
+            <!--Here I created a first name label and textbox-->
+            <p>
+                <label for="first name">First Name:</label>
+                <input type="first name" type="text" placeholder="First Name" name="first name">
+
+            </p>
+            <!--here I created a last name label and textbox-->
+            <p>
+                <label for="last name">Last Name:</label>
+                <input type="last name" type="text" placeholder="Last Name" name="last name">
+            </p>
+
+            <!--Here I created a combo box for 3 different food preferences, chicken, beef and fish-->
+            <p>
+                <label for="foodpreference">Which food would you like to eat?</label>
+
+                <select name="food" id="foodchoice">
+
+                    <option value="chicken">Chicken</option>
+
+                    <option value="beef">Beef</option>
+
+                    <option value="fish">Fish</option>
+                </select>
+            </p>
+
+            <!--Here I created a "do you have any allergies?" label and textbox-->
+            <p>
+                <label for="allergies">Do you have any allergies?</label>
+                <textarea name="allergies" id="allergies" cols="30" rows="10" placeholder="Type allergies here..."></textarea>
+            </p>
+
+                <!--Here I created a "send" button-->
+                <button>Send</button>
+
+
+    </section>
+    
+</body>
+</html>
