@@ -1,0 +1,86 @@
+/* Here I made the text green and the background-color beige */
+*{
+    color:green;
+    background-color:beige;
+} 
+
+/* Here I made the background-color beige*/
+body{
+    background-color:beige;
+}
+
+/* Here I made the font size in the button 30px */
+button{
+    font-size:30px;
+}
+
+/* Here I made the h1 and h2 element orange*/
+h1, h2{
+    color:orange;
+}
+
+/* Here I added a background-color of green and white text color element ID  */
+
+#signup{
+    background-color:green;
+    color: white;
+
+}
+
+/* Here I added a class element that I called from the html file and made it brown */
+.sec{
+    color:brown;
+}
+
+/* Here I added a descendant selector and made the link hotpink*/
+.post a{
+    color: hotpink;
+}
+/* Here I added a descendant selector blue */
+footer > a{
+
+    color:blue;
+}
+
+/* Here I made the password when it is written to be purple */
+input[type="password"]{
+
+    color:purple;
+}
+
+/* Here I made what's written in the search box red  */
+input[type="text"]{
+
+    color:red;
+}
+
+/* Here I added a color of blueviolet for the google link */
+a[href*="google"]{
+
+    color:blueviolet;
+}
+
+/* Here I added a pseudo-class of hover; a special state */
+button:hover{
+
+    background-color:red;
+    color:aquamarine;
+}
+
+/* Here I made it so that when the mouse rolls over the +vote button it turns green */
+.post button:active{
+
+    background-color:green;
+}
+
+/* Here I added a pseudo-element of the first-letter and made the font size 50px */
+h2::first-letter{
+
+    font-size:50px;
+}
+
+/* Here I added a pseudo-element of the first-line and made the color yellowgreen */
+p::first-line{
+
+    color:yellowgreen;
+}
