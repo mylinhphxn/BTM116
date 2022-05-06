@@ -1,7 +1,10 @@
-/*  */
-header{
+/*Here I made the header and the hyperlinks in the first 2 paragraph tags 30 pc and red*/
+a {
     font-size:30px;
-    color:green;
+    color:red;
 }
-
+/* Here I made the class element of goat green */
+.goat{
+    color: green;
+}
 
