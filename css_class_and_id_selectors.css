@@ -1,0 +1,27 @@
+/*To select elements with a specific class, write a period (.) character, followed by the name of the class.*/
+.crimson{
+    color:crimson;
+}
+.green{
+    color:green;
+}
+.goldenrod{
+    color:goldenrod;
+}
+.red{
+    color:red;
+}
+
+/*Here I called the class types and changed the background color of the buttons as well as making the text in the buttons white*/
+.yes{
+    background-color: green; /* green */
+    color: white;
+  }
+
+.no{
+background-color: red; /* red */
+color: white;
+  }
+
+
+
