@@ -19,11 +19,64 @@
                 alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Branding
             </a>
-            <!--Here I created a toggle button for when it reaches the breaking point it shows up in the navigation bar-->
+            <!--Here I created a toggle button (hamburger menu) for when it reaches the breaking point it shows up in the navigation bar-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
+            <!-- Here I created a collapse nav bar. Nav Class with the id of navbar1-->
+            <div class="collapse navbar-collapse" id="navbar1">
+                <!-- Here I added an unordered list with navigation items with links -->
+                <!-- I added "d-flex me-auto" to push the search bar and search button to the right edge of the screen-->
+                <ul class="navbar-nav d-flex me-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://nytimes.com">First</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://nytimes.com">Second</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://nytimes.com">Third</a>
+                    </li>
+                    <!-- Here I created a dropdown class od more in the nav bar-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">More</a>
+                        <!-- Here I created the dropdown list for the class more-->
+                        <ul class="dropdown-menu">
+                            <!-- Here I created an unordered list with links to each dropdown item-->
+                            <li>
+                                <a href="https://www.espn.com" class="dropdown-item">First Dropdown</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.espn.com" class="dropdown-item">Second Dropdown</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.espn.com" class="dropdown-item">Third Dropdown</a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.espn.com" class="dropdown-item">Fourth Dropdown</a>
+                            </li>
+
+                        </ul>
+
+
+                    </li>
+
+                </ul>
+                <!-- Here I changed the alignment of the search bar and search button by adding class="d-flex"-->
+                <form class="d-flex" action="/testing">
+                    <!--Here I created space between the search bar and search button by adding a margin space "me-2"-->
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+
+                </form>
+            </div>
         
         </div>
         
