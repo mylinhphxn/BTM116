@@ -60,7 +60,72 @@ console.log(items);
 
 // call actual index
 // reference particular through index
+// item 1
 items[1].style.backgroundColor='yellow';
 items[1].style.fontWeight='bold';
 items[1].textContent='skee wee'
 items[1].style.color='green';
+// item 0 
+items[0].style.backgroundColor='red';
+items[0].style.fontWeight='bold';
+items[0].textContent='oooop'
+items[0].style.color='white';
+// item 2
+items[2].style.backgroundColor='blue';
+items[2].style.fontWeight='bold';
+items[2].textContent='zeee phi'
+items[2].style.color='white';
+
+// create different types of for loops
+// for (let i=1; i <=10;i++){
+
+//     console.log(i);
+// }
+// specify what index you want to begin with 
+// for (let i=1; i <=20; i+=2){
+
+//     console.log(i);
+// }
+
+// created a for statement
+// fixed scale is i-=2 incrementing by 2 
+// for (let i=100; i >=0; i-=2){
+
+//     console.log(i);
+// }
+
+// created array 
+// declare array
+// // increment each value i++
+// const myDiamonds = ['snacky','scary','lily','ittybitty','pinchie','lanky','nibbles','kibbles'];
+// // for loop, header, i=integer(snacky) corresponds to variable, starts at 0, check to see if it's at the end of the list
+// // then  go into body of code, execute code, increment value, then goes (increment) to next variable 1
+// for (let i = 0; i <myDiamonds.length; i++){
+//     console.log(i, myDiamonds[i]);
+// }
+
+// // create for loop that goes through all list of items
+// for(var i=0; i <items.length; i++){
+// // change text content and bg color
+// // passing i=index
+// // when you're done with body of code you're gonna iterate
+//     items[i].style.backgroundColor='grey';
+//     items[i].textContent="changing the list items";
+//     items[i].styleColor='white';
+// }
+
+//////////////////////////////////////
+// GetElementByTagName
+
+// create variable object
+var li=document.getElementsByTagName('li');
+// pass into console.log 
+console.log(li);
+// call an index
+console.log(li[1]);
+
+// call variable  and manipulate particular element
+li[1].textContent="hello 2 now";
+li[1].style.fontWeight='bold';
+li[1].style.backgroundColor='green';
+li[1].style.color='white';
