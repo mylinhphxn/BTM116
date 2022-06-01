@@ -61,20 +61,20 @@ console.log(items);
 // call actual index
 // reference particular through index
 // item 1
-items[1].style.backgroundColor='yellow';
-items[1].style.fontWeight='bold';
-items[1].textContent='skee wee'
-items[1].style.color='green';
-// item 0 
-items[0].style.backgroundColor='red';
-items[0].style.fontWeight='bold';
-items[0].textContent='oooop'
-items[0].style.color='white';
-// item 2
-items[2].style.backgroundColor='blue';
-items[2].style.fontWeight='bold';
-items[2].textContent='zeee phi'
-items[2].style.color='white';
+// items[1].style.backgroundColor='yellow';
+// items[1].style.fontWeight='bold';
+// items[1].textContent='skee wee'
+// items[1].style.color='green';
+// // item 0 
+// items[0].style.backgroundColor='red';
+// items[0].style.fontWeight='bold';
+// items[0].textContent='oooop'
+// items[0].style.color='white';
+// // item 2
+// items[2].style.backgroundColor='blue';
+// items[2].style.fontWeight='bold';
+// items[2].textContent='zeee phi'
+// items[2].style.color='white';
 
 // create different types of for loops
 // for (let i=1; i <=10;i++){
@@ -118,14 +118,39 @@ items[2].style.color='white';
 // GetElementByTagName
 
 // create variable object
-var li=document.getElementsByTagName('li');
-// pass into console.log 
-console.log(li);
-// call an index
-console.log(li[1]);
+// var li=document.getElementsByTagName('li');
+// // pass into console.log 
+// console.log(li);
+// // call an index
+// console.log(li[1]);
 
-// call variable  and manipulate particular element
-li[1].textContent="hello 2 now";
-li[1].style.fontWeight='bold';
-li[1].style.backgroundColor='green';
-li[1].style.color='white';
+// // call variable  and manipulate particular element
+// li[1].textContent="hello 2 now";
+// li[1].style.fontWeight='bold';
+// li[1].style.backgroundColor='green';
+// li[1].style.color='white';
+
+// // created another for loop that goes through the array
+// for(var i=0; i<li.length; i++){
+// // pass in header
+// // call variable and manipulate element 
+//     li[i].style.backgroundColor='lightgrey';
+//     li[i].textContent="i changed all the items from the DOM";
+//     li[i].style.color='white';
+// }
+
+/////////////////////
+///////Query Selector:
+
+// created object
+var header = document.querySelector('#main-header');
+// call header and manipulate
+header.style.borderBottom = 'solid 4px hotpink';
+// we have 2 input titles
+// input variable
+var input = document.querySelector('input');
+// changing value of text box
+input.value = "i just changed the text value in the input box";
+
+// the point of this exercise is going into the dom and manipulate elements 
+
