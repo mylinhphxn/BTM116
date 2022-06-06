@@ -143,14 +143,44 @@ console.log(items);
 ///////Query Selector:
 
 // created object
-var header = document.querySelector('#main-header');
-// call header and manipulate
-header.style.borderBottom = 'solid 4px hotpink';
-// we have 2 input titles
-// input variable
-var input = document.querySelector('input');
-// changing value of text box
-input.value = "i just changed the text value in the input box";
+// var header = document.querySelector('#main-header');
+// // call header and manipulate
+// header.style.borderBottom = 'solid 4px hotpink';
+// // we have 2 input titles
+// // input variable
+// var input = document.querySelector('input');
+// // changing value of text box
+// input.value = "i just changed the text value in the input box";
 
-// the point of this exercise is going into the dom and manipulate elements 
+// // the point of this exercise is going into the dom and manipulate elements 
 
+// // submit variable 
+// var submit = document.querySelector('input[type="submit"]');
+// // changing value of button
+// submit.value = "Hello Button";
+
+// // calling the list group items and put into index
+// // calling last item 
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// // change last item
+// lastItem.style.color = 'blue';
+
+// // created another variable. called list group class
+// // this returns specific index
+// var otherItem = document.querySelector('.list-group-item:nth-child(2)');
+// // 
+// otherItem.style.color = "coral"
+
+
+/////////////////////////////////////////////////////
+// querySelectorAll is similar to query selector
+
+// calling the class "title"
+var titles = document.querySelectorAll('.title');
+// pass through console.log. there are only 2 elements
+console.log(titles);
+
+// change variable. changed the title 
+titles[0].textContent = 'hello, i just changed the title';
+
+// 
