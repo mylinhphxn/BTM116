@@ -180,7 +180,21 @@ var titles = document.querySelectorAll('.title');
 // pass through console.log. there are only 2 elements
 console.log(titles);
 
-// change variable. changed the title 
+// change variable.  called title and changed the title 
 titles[0].textContent = 'hello, i just changed the title';
 
-// 
+// return list of elements 
+// create two variables one for odd one for even (n-th child)
+// each particular line item knows what list it goes in 
+// two lists
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+// for loop that iterates through odd 
+for (var i = 0; i < odd.length; i++) {
+// i=integer goes through every item in the index
+    odd[i].style.backgroundColor = 'grey';
+    even[i].style.backgroundColor = 'green';
+    even[i].style.color ='whitesmoke';
+    odd[i].style.color = 'whitesmoke';
+}
